@@ -11,6 +11,8 @@
 		AA7F642C28F164C200683286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7F642B28F164C200683286 /* ContentView.swift */; };
 		AA7F642E28F164C700683286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7F642D28F164C700683286 /* Assets.xcassets */; };
 		AA7F643128F164C700683286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7F643028F164C700683286 /* Preview Assets.xcassets */; };
+		AA7F643C28F16EE100683286 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7F643B28F16EE100683286 /* libc++.tbd */; };
+		AA7F643F28F1822400683286 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = AA7F643E28F1822400683286 /* YaneuraOuiOSSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		AA7F642B28F164C200683286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA7F642D28F164C700683286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA7F643028F164C700683286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA7F643B28F16EE100683286 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7F643C28F16EE100683286 /* libc++.tbd in Frameworks */,
+				AA7F643F28F1822400683286 /* YaneuraOuiOSSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,7 @@
 			children = (
 				AA7F642828F164C200683286 /* YaneuraOuiOS */,
 				AA7F642728F164C200683286 /* Products */,
+				AA7F643A28F16EE100683286 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +73,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AA7F643A28F16EE100683286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA7F643B28F16EE100683286 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = YaneuraOuiOS;
+			packageProductDependencies = (
+				AA7F643E28F1822400683286 /* YaneuraOuiOSSPM */,
+			);
 			productName = YaneuraOuiOS;
 			productReference = AA7F642628F164C200683286 /* YaneuraOuiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = AA7F641D28F164C100683286;
+			packageReferences = (
+				AA7F643D28F1822400683286 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */,
+			);
 			productRefGroup = AA7F642728F164C200683286 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA7F643D28F1822400683286 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/select766/YaneuraOuiOSSPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA7F643E28F1822400683286 /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA7F643D28F1822400683286 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */;
+			productName = YaneuraOuiOSSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA7F641E28F164C100683286 /* Project object */;
 }

@@ -6,14 +6,26 @@
 //
 
 import SwiftUI
+import YaneuraOuiOSSPM
 
 struct ContentView: View {
+    @State private var usiHost = "127.0.0.1"
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("YaneuraOu iOS")
+            HStack {
+                Text("USI Host IP:")
+                TextField("", text: $usiHost)
+            }.padding()
+            Button(action: {
+                let host = usiHost
+                let count = host.utf8CString.count
+                let result: UnsafeMutableBufferPointer<Int8> = UnsafeMutableBufferPointer<Int8>.allocate(capacity: count)
+                _ = result.initialize(from: host.utf8CString)
+                print("yaneuraou_ios_main", YaneuraOuiOSSPM.yaneuraou_ios_main(result.baseAddress!, 8090))
+            }) {
+                Text("Run")
+            }
         }
         .padding()
     }
