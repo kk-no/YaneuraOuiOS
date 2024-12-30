@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93A1B5232D22697400543F89 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 93A1B5222D22697400543F89 /* YaneuraOuiOSSPM */; };
+		93A1B5252D2269C300543F89 /* EngineCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1B5242D2269BD00543F89 /* EngineCommunicator.swift */; };
+		93A1B5282D226E2000543F89 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 93A1B5272D226E2000543F89 /* YaneuraOuiOSSPM */; };
+		93A1B52E2D22738C00543F89 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 93A1B52D2D22738C00543F89 /* YaneuraOuiOSSPM */; };
+		93A1B5312D22743B00543F89 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 93A1B5302D22743B00543F89 /* YaneuraOuiOSSPM */; };
+		93A1B5332D227D9C00543F89 /* nn.bin in Resources */ = {isa = PBXBuildFile; fileRef = 93A1B5322D227D9C00543F89 /* nn.bin */; };
+		93A1B5362D22834C00543F89 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 93A1B5352D22834C00543F89 /* YaneuraOuiOSSPM */; };
 		AA7F642A28F164C200683286 /* YaneuraOuiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7F642928F164C200683286 /* YaneuraOuiOSApp.swift */; };
 		AA7F642C28F164C200683286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7F642B28F164C200683286 /* ContentView.swift */; };
 		AA7F642E28F164C700683286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7F642D28F164C700683286 /* Assets.xcassets */; };
 		AA7F643128F164C700683286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7F643028F164C700683286 /* Preview Assets.xcassets */; };
 		AA7F643C28F16EE100683286 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7F643B28F16EE100683286 /* libc++.tbd */; };
-		AA7F643F28F1822400683286 /* YaneuraOuiOSSPM in Frameworks */ = {isa = PBXBuildFile; productRef = AA7F643E28F1822400683286 /* YaneuraOuiOSSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93A1B5242D2269BD00543F89 /* EngineCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineCommunicator.swift; sourceTree = "<group>"; };
+		93A1B5322D227D9C00543F89 /* nn.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = nn.bin; sourceTree = "<group>"; };
 		AA7F642628F164C200683286 /* YaneuraOuiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaneuraOuiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7F642928F164C200683286 /* YaneuraOuiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaneuraOuiOSApp.swift; sourceTree = "<group>"; };
 		AA7F642B28F164C200683286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +38,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7F643C28F16EE100683286 /* libc++.tbd in Frameworks */,
-				AA7F643F28F1822400683286 /* YaneuraOuiOSSPM in Frameworks */,
+				93A1B5232D22697400543F89 /* YaneuraOuiOSSPM in Frameworks */,
+				93A1B5282D226E2000543F89 /* YaneuraOuiOSSPM in Frameworks */,
+				93A1B52E2D22738C00543F89 /* YaneuraOuiOSSPM in Frameworks */,
+				93A1B5312D22743B00543F89 /* YaneuraOuiOSSPM in Frameworks */,
+				93A1B5362D22834C00543F89 /* YaneuraOuiOSSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,8 @@
 		AA7F642828F164C200683286 /* YaneuraOuiOS */ = {
 			isa = PBXGroup;
 			children = (
+				93A1B5322D227D9C00543F89 /* nn.bin */,
+				93A1B5242D2269BD00543F89 /* EngineCommunicator.swift */,
 				AA7F642928F164C200683286 /* YaneuraOuiOSApp.swift */,
 				AA7F642B28F164C200683286 /* ContentView.swift */,
 				AA7F642D28F164C700683286 /* Assets.xcassets */,
@@ -98,7 +112,11 @@
 			);
 			name = YaneuraOuiOS;
 			packageProductDependencies = (
-				AA7F643E28F1822400683286 /* YaneuraOuiOSSPM */,
+				93A1B5222D22697400543F89 /* YaneuraOuiOSSPM */,
+				93A1B5272D226E2000543F89 /* YaneuraOuiOSSPM */,
+				93A1B52D2D22738C00543F89 /* YaneuraOuiOSSPM */,
+				93A1B5302D22743B00543F89 /* YaneuraOuiOSSPM */,
+				93A1B5352D22834C00543F89 /* YaneuraOuiOSSPM */,
 			);
 			productName = YaneuraOuiOS;
 			productReference = AA7F642628F164C200683286 /* YaneuraOuiOS.app */;
@@ -129,7 +147,7 @@
 			);
 			mainGroup = AA7F641D28F164C100683286;
 			packageReferences = (
-				AA7F643D28F1822400683286 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */,
+				93A1B5342D22834C00543F89 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */,
 			);
 			productRefGroup = AA7F642728F164C200683286 /* Products */;
 			projectDirPath = "";
@@ -145,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A1B5332D227D9C00543F89 /* nn.bin in Resources */,
 				AA7F643128F164C700683286 /* Preview Assets.xcassets in Resources */,
 				AA7F642E28F164C700683286 /* Assets.xcassets in Resources */,
 			);
@@ -158,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7F642C28F164C200683286 /* ContentView.swift in Sources */,
+				93A1B5252D2269C300543F89 /* EngineCommunicator.swift in Sources */,
 				AA7F642A28F164C200683286 /* YaneuraOuiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YaneuraOuiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 26639CRUMF;
+				DEVELOPMENT_TEAM = YTJ7CZ9M7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.outlook.kk-no.YaneuraOuiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YaneuraOuiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = 26639CRUMF;
+				DEVELOPMENT_TEAM = YTJ7CZ9M7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -331,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.outlook.select766.YaneuraOuiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.outlook.kk-no.YaneuraOuiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,20 +383,36 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA7F643D28F1822400683286 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */ = {
+		93A1B5342D22834C00543F89 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/select766/YaneuraOuiOSSPM";
+			repositoryURL = "https://github.com/kk-no/YaneuraOuiOSSPM";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 0.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA7F643E28F1822400683286 /* YaneuraOuiOSSPM */ = {
+		93A1B5222D22697400543F89 /* YaneuraOuiOSSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA7F643D28F1822400683286 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */;
+			productName = YaneuraOuiOSSPM;
+		};
+		93A1B5272D226E2000543F89 /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YaneuraOuiOSSPM;
+		};
+		93A1B52D2D22738C00543F89 /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YaneuraOuiOSSPM;
+		};
+		93A1B5302D22743B00543F89 /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YaneuraOuiOSSPM;
+		};
+		93A1B5352D22834C00543F89 /* YaneuraOuiOSSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93A1B5342D22834C00543F89 /* XCRemoteSwiftPackageReference "YaneuraOuiOSSPM" */;
 			productName = YaneuraOuiOSSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
